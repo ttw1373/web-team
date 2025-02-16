@@ -1,1 +1,336 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF_8">
+<meta name="viewport" content="width=device-width, inital-scale=1.0">
+<title>Terminal Cods</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+header {
+    border: 1px solid darkgoldenrod;
+    background-color: black;
+}
+header h1 {
+    text-align: center;
+    color: whitesmoke;
+}
+body {
+    background-color: bisque;
+} 
+main {
+    color: whitesmoke;
+    background-color: black;
+}
+.tableheader {
+    color: red;
+}
+.code {
+    color: green;
+}
+.explanation {
+    color: green;
+} 
+span {
+    font-weight: 800;
+}
+.gray {
+    color: wheat;
+}
+.heading {
+    font-weight: 800;
+    color: black;
+}
+table {
+    border: 1px solid transparent;
+    border-collapse: collapse;
+    border: 1px solid darkgoldenrod;
+    width: 100%;
+}
+th {
+    text-align: left;
+    width: 50%;
+}
+td {
+    padding: 4px 12px;
+    border: 1px solid darkgoldenrod;
+    width: 50%;
+    
+}
+.heading-table {
+    text-align: center;
+}
+p  {
+    color: darkturquoise;
+    text-shadow: 0px 1px 0px black;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Terminal Cods</h1>
 
+</header>
+<main>
+ <table>
+    <thead>
+           <tr><th class="heading-table" colspan="2"><span class="tableheader">Konsole</span></th></tr>
+           <tr>
+               <th class="code">Code</th>
+               <th class="explanation">Erklärung</th>
+               
+           </tr>
+       </thead>
+       <tbody>
+       
+           <tr>
+               <td><span>cd</span> </td>
+               <td>wechselt Verzeichnis</td>
+         </tr>
+         <tr>
+               <td><span>cd ~ </span></td>
+               <td>wechselt ins home Verzeichnis</td>
+           </tr>
+           <tr>
+               <td><span>cd ..</span></td>
+               <td>wechselt in das nächst höhere Verzeichniscd</td>
+           </tr>
+           <tr>
+            <td><span>cat <span class="gray">datei</span></td>
+            <td>zeigt datei inhalt an</td>
+        </tr>
+           <tr class="">
+               <td><span>ls</span</td>
+               <td>zeigt Dateien im Verzeichnis an</td>
+           </tr>
+           
+           <tr>
+               <td><span>ls -a</span></td>
+               <td>erstellt liste aller Dateien plus Nutzungsrechte</td>
+           </tr>
+           </tr>
+               <td><span>ls -la</span></td>
+               <td>erstellt liste aller Dateien plus Nutzungsrechte</td>
+           </tr>
+        <tr>
+            <td><span>pwd</span></td>
+            <td>pfad zum Verzeichnis anzeigen</td>
+        </tr>
+        <tr>
+            <td><span>mkdir <span class="gray">name</span> </span></td>
+            <td>erstelle Verzeichnis</td>
+        </tr>
+        <tr>
+            <td><span>touch <span class="gray">name</span></span></td>
+            <td>erstelle Datei</td>
+        </tr>
+        <tr>
+            <td><span>cp <span class="gray">datei</span></span></td>
+            <td>kopiere datei</td>
+        </tr>
+        <tr>
+            <td><span>rm <span class="gray">datei</span></span></td>
+            <td>lösche datei</td>
+        </tr>
+        <tr>
+            <td><span>mv <span class="gray">datei</span>../</span></td>
+            <td>verschiebe Datei</td>
+        </tr>
+        <tr>
+            <td><span>mv <span class="gray">datei</span> ../<span class="gray">dateix</span> </span></td>
+            <td>verschiebe datei und benenne sie um</td>
+        </tr>
+        <tr>
+            <td><span>clear</span></td>
+            <td>säubert Bildschirm</td>
+        </tr>
+          
+       </tbody>
+       <thead>
+           <tr>
+               <th class="heading-table" colspan="2"><span class="tableheader">Git</span></th>
+               
+           </tr>
+           <tr>
+               <th class="code">Code</th>
+               <th class="explanation">Erklärung</th>
+               
+           </tr>
+       </thead>
+       <tbody>
+       
+      <tr>
+        <td><span>git init</span> </td>
+        <td>legt git repo an</td>
+  </tr>
+  <tr>
+    <td><span>git <span class="gray">befehl</span> --<span class="gray">datei</span></span> </td>
+    <td>befehl wird nur auf datei angewendet</td>
+</tr>
+        <tr>
+            <td><span>git branch </td>
+            <td>zeigt alle branch an</td>
+        </tr>
+        <tr>
+            <td><span>git branch -D <span class="gray">branch</span></span> </td>
+            <td>Löscht  branch </td>
+        </tr>
+        <tr>
+            <td><span>git branch -d <span class="gray">branch</span></span> </td>
+            <td>Löscht zusammengeführten branch </td>
+        </tr>
+           <tr>
+               <td><span>git status</span> </td>
+               <td>zeigt git status an</td>
+         </tr>
+         <tr>
+               <td><span>git add </span></td>
+               <td>fügt Datei zur Staging Area hinzu</td>
+           </tr>
+           <tr>
+            <td><span>git log</span></td>
+            <td>zeigt Commit History an</td>
+        </tr>
+        <tr>
+            <td><span>git log -p</span></td>
+            <td>zeigt ausführliche Commit History an</td>
+        </tr>
+        <tr>
+            <td><span>git log --online</span></td>
+            <td>zeigt verkürzte Commit History an</td>
+        </tr>
+        <tr>
+            <td><span>git log --online --graph --branches</span></td>
+            <td>zeigt für alle branch verkürzte Commit History an </td>
+        </tr>
+        <tr>
+            <td><span>git commit</span></td>
+            <td>comittet gestagte Dateien</td>
+        </tr>
+        <tr>
+            <td><span>git commit -m <span class="gray">"Beschriftung"</span></span></td>
+            <td>comittet gestagte Dateien und beschritet sie</td>
+        </tr>
+        <tr>
+            <td><span>git commit --amend</span></td>
+            <td>letzten commit überschreiben</td>
+        </tr>
+        <tr>
+            <td><span>git diff</span></td>
+            <td>zeigt Änderung zur Staging Area an</td>
+        </tr>
+        <tr>
+            <td><span>git diff --cached</span></td>
+            <td>zeigt gestagete Änderung an</td>
+        </tr>
+        <tr>
+            <td><span>git diff <span class="gray">hash1 hash2</span></span></td>
+            <td>zeigt die Änderung zwischen zwei Commits an</td>
+        </tr>
+        <tr>
+            <td><span>git diff <span class="gray">hash1 hash2</span> --<span class="gray">datei</span></span></td>
+            <td>zeigt die Änderung für datei zwischen zwei Commits an</td>
+        </tr>
+        <tr>
+            <td><span>git reset</span></td>
+            <td>setzt alle als letztes gesetzete änderung in der Staging Area zurück</td>
+        </tr>
+        <tr>
+            <td><span>git reset <span class="gray">datei</span></span></span></td>
+            <td>setzt datei in der Staging Area zurück</td>
+        </tr>
+        <tr>
+            <td><span>git reset <span class="gray">commit hash</span></span></td>
+            <td>Löscht alle Commits nach commit hash, änderung bleiben im working directory bestehen</td>
+        </tr>
+        <tr>
+            <td><span>git reset --hard <span class="gray">commit hash</span></span></span></td>
+            <td>Löscht alle Commits nach commit hash, änderung werden verworfen</td>
+        </tr>
+        <tr>
+            <td><span>git reset --hard </span></td>
+            <td>überschreibt dateien im Arbeitsverzeichnis</td>
+        </tr>
+        <tr>
+            <td><span>git checkout <span class="gray">commit hash</span></span></td>
+            <td>stellt den zustand vor einem commit wieder her</td>
+        </tr>
+        <tr>
+            <td><span>git stash</span></td>
+            <td>erlaubt dir den aktuellen zustand vom working directory und der staging area zwischenspeichern </td>
+        </tr>
+        <tr>
+            <td><span>git stash pop</span></td>
+            <td>stellt den letzten stand vom working directory wieder her </td>
+        </tr>
+        <tr>
+            <td><span>git stash list</span></td>
+            <td>listet alle stash auf </td>
+        </tr>
+        <tr>
+            <td><span>git revert<span>commit</span></td>
+            <td>erstellt commit und nimmt letzte änderung zurück, beschriftung wird automatisch erstellt</td>
+        </tr>
+        <tr>
+            <td><span>git rm <span class="gray">datei</span></span></td>
+            <td>löscht datei aus Arbeitsverzeichnis und Staging Area</td>
+        </tr>
+        <tr>
+            <td><span>git mv <span class="gray">datei</span></td>
+            <td>verschieben und / oder umbenennen von Dateien</td>
+            
+        <tr>
+            <td><span>git blame <span class="gray">datei</span></td>
+            <td>Zeigt Zeile für Zeile an, in welchem Commit diese zuletzt geändert wurden. </td>
+            
+        </tr>
+        <tr>
+            <td><span>git blame --color-lines <span class="gray">datei</span></td>
+            <td>gleiche Commits farblich hervorheben</td>
+        </tr>
+        <tr>
+            <td><span>git merge <span class="gray">branch</span></td>
+            <td>versuch den branch mit aktuellen zusammen zu bringen</td>
+        </tr>
+        <tr>
+            <td><span>git merge --no-ff <span class="gray">branch</span></td>
+            <td>verhindert fast-forward-Merge</td>
+        </tr>
+        <tr>
+            <td><span>git merge --ff-only <span class="gray">branch</span></td>
+            <td>erzwingt einen fast-forward-Merge </td>
+        </tr>
+        <tr>
+            <td><span>git rebase <span class="gray">branch</span></td>
+            <td>Baut die Commit-Historie basierend auf einem anderen Branch auf.</td>
+        </tr>
+        <tr>
+            <td><span>git tag </td>
+            <td>zeigt alle Tags an</td>
+        </tr>
+        <tr>
+            <td><span>git tag -a v<span class="gray">xx.xx.xx</span</td>
+            <td>erstellt tag mit version</td>
+        </tr>
+    </tbody>
+      </table>
+      <p class="heading">Git alternative schreibweise</p>
+      <p>anstatt hash HEAD</p>
+      <ul>
+        <li>HEAD = master</li>
+        <li>HEAD~1 = ein commit vor master</li>
+      </ul>
+      <p>Beispiel (git diff HEAD~1 HEAD) zeigt unterschiede zwischen master und und einen commit davor</p>
+      <p class="heading">.gitignore</p>
+      <p>ist eine Datei inder Pfade Verzeichnisse und Dateien aufgelistet sind, die von Git ignoriert werden</p>
+      <p class="heading">merge Konflikte</p>
+      <ul>
+        <li>Git kann die änderung nicht automatisch mergen</li>
+        <li>z.B: wenn die gleichen zeilen in Branches geändert wurden</li>
+        <li>Konflikt muss Manuell behoben werden</li>
+      </ul>
+      <a href="#">link</a>
+    </main>
+</body>
